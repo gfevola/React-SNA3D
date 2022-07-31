@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+	</head>
+
+	<body>
+		<form method="post" enctype="multipart/form-data">
+			{%csrf_token %}
+
+			<p>
+				<label>Unique Identifier</label>
+				<input type="text" name="Net_Identifier">
+			</p>			
+			
+			<p>
+				<label>Nodes Data</label>
+				<input type="file" name="NodesFile">
+			</p>
+			
+			<br/>
+			<p>
+				<label>Links Data</label>
+				<input type="file" name="LinksFile">
+			</p>		
+
+			<br/>
+			<p>
+				<label>Email Data</label>
+				<input type="file" name="EmailsFile">
+			</p>				
+			<button type="submit" name="SubmitAll">Upload</button>
+			
+		</form>
+
+	</body>
+
+
+</html>

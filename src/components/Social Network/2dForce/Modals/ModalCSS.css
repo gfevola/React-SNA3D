@@ -1,0 +1,32 @@
+
+
+.FieldButton {
+  margin: 2px;
+  width: 200px;
+}
+
+.FieldButton:hover {
+  transition-duration: 0.4s; 
+  background-color: #651987; 
+  color: white;
+}
+
+.FieldButton:active {
+  background-color: #0ffd00; /* Green */
+  color: black;
+}
+
+
+
+
+.RadiusButton {
+	margin: 2px;
+	width: 100px;
+}
+
+.RadiusButton:hover {
+  transition-duration: 0.4s; 
+  background-color: #F9F9F9; 
+  color: black;
+}
+

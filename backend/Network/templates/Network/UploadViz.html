@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		Upload 3-dim file. See views.py to adjust column names
+	</head>
+
+	<body>
+		<form method="post" enctype="multipart/form-data">
+			{%csrf_token %}
+
+			<p>
+				<label>Nodes Data</label>
+				<input type="file" name="File3d">
+			</p>	
+			
+			<button type="submit" name="Submit3d">Upload</button>
+			
+		</form>
+
+	</body>
+
+
+</html>
