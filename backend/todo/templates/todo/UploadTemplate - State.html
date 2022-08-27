@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+	</head>
+
+	<body>
+		<form method="post" enctype="multipart/form-data">
+			{%csrf_token %}
+
+			<p>
+				<label>Unique Identifier</label>
+				<input type="text" name="ReportID">
+			</p>			
+	
+			<p>
+				<label>Data Type, e.g., Hires, Terms</label>
+				<input type="text" name="ModelCategory">
+			</p>	
+
+			<p>
+				<label>Report Date</label>
+				<input type="text" name="ReportDate">
+			</p>	
+	
+			<p>
+				<label>Employee Data</label>
+				<input type="file" name="DataFile">
+			</p>	
+			
+			<button type="submit" name="SubmitAll">Upload</button>
+			
+		</form>
+
+	</body>
+
+
+</html>

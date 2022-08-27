@@ -1,0 +1,59 @@
+/* CSS Document */
+
+body {
+background: #333;
+width: 100%;
+height: 100%;
+}
+#rotata {
+position: relative;
+width: 100px;
+height: 100px;
+margin: auto;
+-moz-transform: rotateX(55deg);
+-webkit-transform: rotateX(55deg);
+transform: rotateX(55deg);
+}
+.eachBit {
+font-size:30px;
+color: #ffffff;
+width: 50px;
+height: 50px;
+position: absolute;
+background-color: #666666;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+transition-property: all;
+-moz-transition-property: all;
+-webkit-transition-property: all;
+}
+.eachBit img {
+width: 100%;
+height: 100%
+}
+.rotateBackRotata, .rotateForwardRotata {
+top: 50%;
+position: absolute;
+background-color: rgba(0,0,0,0.8);
+width: 70px;
+height: 70px;
+border-radius: 100%;
+-moz-border-radius: 100%;
+-webkit-border-radius: 100%;
+padding: 0;
+margin: 0;
+text-align: center;
+color: #ffffff;
+font-weight: bold;
+font-family: Verdana, Geneva, sans-serif;
+font-size: 35px;
+border: 1px solid rgba(255,255,255,0.3);
+cursor: pointer;
+}
+.rotateBackRotata {
+left: -100px;
+}
+.rotateForwardRotata {
+right: -100px;
+}
